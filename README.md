@@ -1,7 +1,5 @@
 # dotfiles
 
----
-
 configs for cli tools i use.
 
 #### list of tools:
