@@ -1,0 +1,27 @@
+"$schema" = 'https://starship.rs/config-schema.json'
+
+format = '''
+$username$git_branch$directory
+$character'''
+
+[character]
+success_symbol = '[❯](bold green)'
+error_symbol = '[✖](bold red)'
+vimcmd_symbol = '[❮](bold green)'
+vimcmd_replace_one_symbol = '[❮](bold purple)'
+vimcmd_replace_symbol = '[❮](bold purple)'
+vimcmd_visual_symbol = '[❮](bold yellow)'
+
+[username]
+style_root = 'white bold bg:black'
+format = '[ ](black bg:blue)[ $user ](blue bg:234) '
+disabled = false
+show_always = true
+
+[git_branch]
+format = '[  ](black bg:purple)[ $branch(:$remote_branch) ](purple bg:234) '
+
+[directory]
+format = '[  ](black bg:yellow)$readonly[ $path ](yellow bg:234)'
+read_only = '  '
+read_only_style = 'black bg:red'

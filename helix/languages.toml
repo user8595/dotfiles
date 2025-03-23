@@ -1,0 +1,48 @@
+# https://dev.to/morlinbrot/configure-helix-for-typescript-eslint-prettierdprint-33bk with modifications
+
+[language-server]
+emmet-ls = { command = "emmet-ls", args = [ "--stdio" ]}
+
+[language-server.eslint]
+command = "vscode-eslint-language-server"
+args = ["--stdio"]
+
+[language-server.eslint.config]
+codeActionsOnSave = { mode = "all", "source.fixAll.eslint" = true }
+format = { enable = true }
+quiet = false
+nodePath = ""
+rulesCustomizations = []
+run = "onType"
+validate = "on"
+experimental = {}
+problems = { shortenToSingleLine = false }
+
+[language-server.vscode-css-language-server.config]
+css = { validate = { enable = true } }
+scss = { validate = { enable = true } }
+less = { validate = { enable = true } }
+provideFormatter = true
+
+[[language]]
+name = "javascript"
+language-servers = [ "typescript-language-server", "eslint", "emmet-ls" ]
+formatter = { command = "prettierd", args = [ "--parser", "typescript" ] }
+auto-format = true
+
+[[language]]
+name = "json"
+formatter = { command = "prettierd", args = [ "--parser", "json" ] }
+auto-format = true
+
+[[language]]
+name = "html"
+language-servers = [ "vscode-html-language-server", "emmet-ls" ]
+formatter = { command = 'prettierd', args = ["--parser", "html"] }
+auto-format = true
+
+[[language]]
+name = "css"
+language-servers = [ "vscode-css-language-server", "emmet-ls" ]
+formatter = { command = 'prettierd', args = ["--parser", "css"] }
+auto-format = true

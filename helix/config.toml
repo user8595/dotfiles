@@ -1,0 +1,25 @@
+theme = "ayu_dark"
+
+[editor]
+line-number = "relative"
+cursorline = true
+bufferline = "always"
+color-modes = true
+
+[editor.cursor-shape]
+insert = "bar"
+normal = "block"
+select = "underline"
+
+[editor.lsp]
+display-progress-messages = true
+
+[editor.file-picker]
+hidden = false
+
+[editor.indent-guides]
+render = true
+
+[editor.gutters.line-numbers]
+min-width = 1
+
