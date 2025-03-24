@@ -11,6 +11,11 @@ insert = "bar"
 normal = "block"
 select = "underline"
 
+[editor.statusline]
+mode.normal = "N"
+mode.insert = "I"
+mode.select = "S"
+
 [editor.lsp]
 display-progress-messages = true
 
