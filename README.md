@@ -1,5 +1,7 @@
 # dotfiles
 
+![prompt preview](./img/prompt.img)
+
 configs for cli tools i use.
 
 #### list of tools:
