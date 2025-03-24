@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = '''
-$username$git_branch$directory
+$username$git_branch$directory $fill $cmd_duration
 $character'''
 
 [character]
@@ -14,14 +14,26 @@ vimcmd_visual_symbol = '[❮](bold yellow)'
 
 [username]
 style_root = 'white bold bg:black'
-format = '[ ](black bg:blue)[ $user ](blue bg:234) '
+format = '[ ](black bg:blue)[ $user ](blue bg:black)'
 disabled = false
 show_always = true
 
 [git_branch]
-format = '[  ](black bg:purple)[ $branch(:$remote_branch) ](purple bg:234) '
+format = '[  ](black bg:purple)[ $branch(:$remote_branch) ](purple bg:black)'
 
 [directory]
-format = '[  ](black bg:yellow)$readonly[ $path ](yellow bg:234)'
+format = '[  ](black bg:yellow)$readonly[ $path ](yellow bg:black)'
 read_only = '  '
 read_only_style = 'black bg:red'
+
+[fill]
+symbol = ' '
+style = 'black'
+
+[cmd_duration]
+format = '[  ](black bg:green)[ $duration ]($style)'
+style = 'green bg:black'
+
+# [git_status]
+# prompt = '[[$staged](green bg:black) [$modified](yellow bg:black) [$deleted](red bg:black) [$stashed](blue bg:black) [$conflicted](red bold bg:black)](bg:black)'
+# todo?
