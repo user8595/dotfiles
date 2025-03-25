@@ -7,6 +7,8 @@ configs for cli tools i use.
 #### list of tools:
 - neovim
 - helix
+- lf
+- lazygit (unmodified)
 - starship (via zsh)
 
 ### theme
