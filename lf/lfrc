@@ -1,0 +1,8 @@
+set icons
+set hidden!
+set dircounts
+set drawbox
+set sixel
+set incsearch
+set mouse false
+# set statfmt ''
