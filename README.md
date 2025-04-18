@@ -1,6 +1,6 @@
 # dotfiles
 
-![prompt preview](./img/prompt.img)
+![prompt preview](./img/prompt.jpg)
 
 configs for cli tools i use.
 
@@ -12,6 +12,4 @@ configs for cli tools i use.
 - starship (via zsh)
 
 ### theme
-ayu-dark from [Gogh4Termux](https://github.com/AvinashReddy3108/Gogh4Termux)
-
-i dont know how to add the .zshrc to this repo via command line, so maybe that is on the todo for now on.
+catppuccin-mocha from [catppuccin/termux](https://github.com/catppuccin/termux)

@@ -13,16 +13,16 @@ vimcmd_replace_symbol = '[❮](bold purple)'
 vimcmd_visual_symbol = '[❮](bold yellow)'
 
 [username]
-style_root = 'white bold bg:black'
-format = '[ ](black bg:blue)[ $user ](blue bg:black)'
+style_root = 'white bold'
+format = '[ ](black bg:blue)[ $user ](blue)'
 disabled = false
 show_always = true
 
 [git_branch]
-format = '[  ](black bg:purple)[ $branch(:$remote_branch) ](purple bg:black)'
+format = '[  ](black bg:purple)[ $branch(:$remote_branch) ](purple)'
 
 [directory]
-format = '[  ](black bg:yellow)$readonly[ $path ](yellow bg:black)'
+format = '[  ](black bg:yellow)$readonly[ $path ](yellow)'
 read_only = '  '
 read_only_style = 'black bg:red'
 
@@ -32,7 +32,7 @@ style = 'black'
 
 [cmd_duration]
 format = '[  ](black bg:green)[ $duration ]($style)'
-style = 'green bg:black'
+style = 'green'
 
 # [git_status]
 # prompt = '[[$staged](green bg:black) [$modified](yellow bg:black) [$deleted](red bg:black) [$stashed](blue bg:black) [$conflicted](red bold bg:black)](bg:black)'
