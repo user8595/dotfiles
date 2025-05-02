@@ -2,14 +2,14 @@
 
 ![prompt preview](./img/prompt.jpg)
 
-configs for cli tools i use.
+Configs for cli tools i use.
 
-#### list of tools:
+### List of tools:
 - neovim
 - helix
 - lf
 - lazygit (unmodified)
 - starship (via zsh)
 
-### theme
+### Theme
 catppuccin-mocha from [catppuccin/termux](https://github.com/catppuccin/termux)
