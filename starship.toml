@@ -1,7 +1,7 @@
 "$schema" = 'https://starship.rs/config-schema.json'
 
 format = '''
-$username$git_branch$directory $fill $cmd_duration
+$username$git_branch$directory $fill $cmd_duration$time
 $character'''
 
 [character]
@@ -31,8 +31,14 @@ symbol = ' '
 style = 'black'
 
 [cmd_duration]
-format = '[  ](black bg:green)[ $duration ]($style)'
+format = '[  ](black bg:green)[ $duration ]($style)'
 style = 'green'
+
+[time]
+format = '[  ](white bg:black)[ $time ]($style)'
+disabled = false
+time_format = '%H:%M'
+style = 'white'
 
 # [git_status]
 # prompt = '[[$staged](green bg:black) [$modified](yellow bg:black) [$deleted](red bg:black) [$stashed](blue bg:black) [$conflicted](red bold bg:black)](bg:black)'
